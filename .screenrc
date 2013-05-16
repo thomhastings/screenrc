@@ -1,0 +1,31 @@
+# the best .screenrc...
+# compozed by teh 5tinger
+autodetach on
+startup_message off
+defscrollback 10000
+altscreen on # clear screen after closing some programs
+defflow auto
+shell -bash
+defutf8 on
+vbell off
+
+shelltitle '$ |bash'
+
+# backticks to display information in the statusbar
+backtick 1 0 0 /usr/local/bin/screen-mem-usage
+backtick 2 0 0 /usr/local/bin/screen-cpu-usage
+
+# colors
+#term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# statusbar
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= G}[%{g}host:%{G}%H]%{g}[%= %{= w}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{y}cpu:%{Y}%2`%%%{b}mem:%{B}%1`%{r}load:%{R}%l%{g}][%{c}%m-%d~%{C}%c:%s%{g}]'
+
+# warning of activity
+activity '%c activity -> %n%f %t'
+
+# left + right arrow key meta key mods
+bindkey '^[Od' prev  # change window with ctrl-left
+bindkey '^[Oc' next  # change window with ctrl-right
