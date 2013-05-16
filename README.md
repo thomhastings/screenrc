@@ -1,9 +1,9 @@
 screenrc
 ========
 
-# the best .screenrc...
+## the best .screenrc...
 
-## installation instructions
+### installation instructions
 
 git clone git://github.com/thomhastings/screenrc
 cd screenrc
