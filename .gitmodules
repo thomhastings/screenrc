@@ -1,0 +1,3 @@
+[submodule "screenrc-cpu-mem"]
+	path = screenrc-cpu-mem
+	url = git://github.com/thomhastings/screen-cpu-mem.git
