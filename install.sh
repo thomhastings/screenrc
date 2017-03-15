@@ -8,4 +8,4 @@ cmake .
 make
 sudo make install
 cd ..
-sudo ln -s $WORKINGDIR/screenrc $HOME/.screenrc
+sudo ln -s $WORKINGDIR/.screenrc $HOME/.screenrc
