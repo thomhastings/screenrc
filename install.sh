@@ -2,8 +2,8 @@
 # the best .screenrc...
 # installer
 WORKINGDIR=`pwd`
-sudo apt-get install build-essential cmake -y
-cd screenrc-cpu-mem
+sudo apt install build-essential cmake -y
+cd screen-cpu-mem
 cmake .
 make
 sudo make install

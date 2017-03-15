@@ -5,9 +5,11 @@ screenrc
 
 ### installation instructions
 
-git clone git://github.com/thomhastings/screenrc
-cd screenrc
-sh install.sh
+```bash
+git clone git://github.com/thomhastings/screenrc  
+cd screenrc  
+sh install.sh  
+```
 
 **bugfix/wishlist**: remove spaces in the 'window navigation'  
 
