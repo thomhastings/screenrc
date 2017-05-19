@@ -1,11 +1,11 @@
 #!/bin/bash
 # the best .screenrc...
 # installer
-WORKINGDIR=`pwd`
 sudo apt install build-essential cmake -y
+git clone https://github.com/thomhastings/screen-cpu-mem
 cd screen-cpu-mem
 cmake .
 make
 sudo make install
 cd ..
-sudo ln -s $WORKINGDIR/.screenrc $HOME/.screenrc
+sudo cp $PWD/screenrc $HOME/.screenrc
